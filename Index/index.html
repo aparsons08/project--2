@@ -23,15 +23,17 @@
 
             const q = 'cats'
             const apikey = 'z26ixcTXUlwPgGGZzb9ytIyvwtIIfImV'
-            const path = `https://https://api.giphy.com/v1/gifs/search?api_key=${apikey}&q=${q}`
+            const path = `https://api.giphy.com/v1/gifs/search?api_key=${apikey}&q=${q}`
         
-            const p = fetch(path)
-            const p2 = p.then(function(res) {
+            fetch(path).then(function(res) {
                 return res.json()
-            })
-
-            p2.then(function(json) {
-
+            }).then(function(json) {
+                console.log(json.data[0].images.fixed_width.url)
+                json.data.forEach(function(obj) {
+                    console.log(obj.images.fixed_width.url)
+                })
+            }).catch(function(err) {
+                console.log(err.message)
             })
 
         </script>
