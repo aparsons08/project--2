@@ -9,4 +9,8 @@
   -webkit-column-gap: 1em;
           column-gap: 1em;
 }
+
+.item {
+  margin-bottom: 1em;
+}
 /*# sourceMappingURL=styles.css.map */
