@@ -1,0 +1,12 @@
+.container {
+  width: calc(200px * 4 + 3em);
+  margin: auto;
+}
+
+.results {
+  -webkit-columns: 4;
+          columns: 4;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+}
+/*# sourceMappingURL=styles.css.map */
