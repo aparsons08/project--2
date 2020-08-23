@@ -1,0 +1,107 @@
+/* ===== global classes ===== */
+.flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ===== navbar ===== */
+.navbar {
+    color: #fff !important;
+    padding: 30px 15%;
+    background: #000000;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+#logo_text {
+    font-weight: bold;
+}
+
+/* search bar */
+.section {
+    width: 100%;
+    background: #222222;
+    text-align: center;
+    padding: 30px;
+}
+
+.full-height {
+    height: calc(100vh - 100px);
+}
+
+#search-form {
+    padding: 30px 0;
+    max-width: 500px;
+    margin: auto;
+}
+
+#search-input {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 15px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#search-btn {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#search_input:focus,
+#search_btn:focus {
+    outline: none;
+}
+
+
+/* ===== section ===== */
+.giphy_title {
+    color: #fff;
+    font-family: 'Happy Monkey';
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.results {
+    padding: 30px 15%;
+    text-align: center;
+}
+
+.item {
+    margin: 15px;
+}
+
+.giphy_img {
+    width: 80%;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .results {
+        padding: 30px 0;
+    }
+
+    .giphy_img {
+        width: 100%;
+    }
+}
+
+/*# sourceMappingURL=styles.css.map */

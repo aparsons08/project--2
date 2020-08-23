@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Giphy API</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
+</head>
+
+<body>
+    <!---------- navbar ------------>
+    <nav class="navbar flex navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="#"><span id="logo_text">GIPHY</span> Search API</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#search">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!---------- main section ------------>
+    <!-- search bar -->
+    <section class="section">
+        <h2 class="giphy_title"> GIPHY </h2>
+        <form id="search-form" class="flex">
+            <input type="text" id="search-input" placeholder="Search..." />
+            <button type="submit" id="search-btn"><i class="fa fa-search"></i></button>
+        </form>
+        <div id="results" class="results">
+            <img class="giphy_img" src="https://images.squarespace-cdn.com/content/v1/581499b8e58c627afce6221c/1537558611887-29Q227BUL78P8T09ZGYL/ke17ZwdGBToddI8pDm48kJWWNFJdUP9-plwLjVJ0JJ4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcb9XANtaKJmDiqnKo7o9_1raZC0ycbjZaEe7bxaU9KO95K0jLYFr8QC9Y5PV_rpqM/giphy+world+video+thumbnail.PNG?format=1000w">
+        </div>
+    </section>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../JS/main.js"></script>
+</body>
+
+</html>
